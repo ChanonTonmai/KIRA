@@ -1,0 +1,8 @@
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe2_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe7_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe5_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe0_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe3_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe1_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe4_assembly.s
+/home/khongpra/PhD_project/KIRA/software/output/output_gemm/pe6_assembly.s

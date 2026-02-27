@@ -1,0 +1,45 @@
+#pragma total_pes=8
+#pragma pes_per_cluster=1
+#pragma EMBRASSINGLY_SPLIT=8
+#pragma minimum_pes_required=1
+
+
+
+// int x1[32][32] => x18, [i, k]
+// int x2[32][32] => x19, [k, j]
+// int x3[32][32] => x20, [i, j]
+
+int x1[64][64] => x18, [i, k]
+int x2[64][64] => x19, [k, j]
+int x3[64][64] => x20, [i, j]
+
+//int x1[128][128] => x18, [i, k]
+//int x2[128][128] => x19, [k, j]
+//int x3[128][128] => x20, [i, j]
+
+&x1 = 200
+&x2 = 20000
+&x3 = 40004
+
+// For 128
+//&x1 = 200
+//&x2 = 80000
+//&x3 = 160004
+
+main:
+  for i(x10) = 64:
+    for j(x11) = 64:
+      for k(x12) = 64:
+        pe_0:
+          load x1[i][k]
+          load x2[k][j]
+          load x3[i][j]
+          mul x1, x1, x2
+          add x3, x3, x1
+          store x3[i][j]
+        end_pe0
+      endfor
+    endfor
+  endfor 
+endmain
+

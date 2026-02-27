@@ -1,0 +1,28 @@
+##############################
+# Verilator build artifacts
+##############################
+obj_dir/
+
+##############################
+# Simulation outputs
+##############################
+waveform*.vcd
+*.vcd
+mem_dump_bytes.txt
+
+##############################
+# Logs and reports
+##############################
+logs/
+rpt/
+rpt_fc/
+rpt_tc/
+
+##############################
+# Temporary/editor files
+##############################
+*.log
+*.swp
+*~
+Untitled
+
